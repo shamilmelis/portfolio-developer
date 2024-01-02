@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Сайт Визитка</title>
+</head>
+<body id="body">
+
+    <div class="header" id="header">
+        <div class="container-menu" id="container-menu">
+            <div class="container-menu__blocks">
+                <div><button class="open__menu" id="open__menu"><i class="fa-solid fa-bars"></i></button></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container" id="container">
+            <div class="container__blocks" id="container__blocks">
+                <div class="container__close__menu" id="container__close__menu">
+                    <div><button class="close__menu__button" id="close__menu__button"><i class="fa-solid fa-xmark"></i></button></div>
+                </div>
+                <div class="container__blocks__firstChild" id="container__blocks__firstChild">
+                    <div><img src="https://st.weblancer.net/download/5546690_120xs.jpeg" alt="img" class="author__avatar"></div>
+                    <div><p class="author__name">Шамиль Мелисов</p></div>
+                    <div><p class="author__content">Front End Developer </p></div>
+                </div>
+
+                <div class="container__blocks__secondChild" id="container__blocks__secondChild">
+                    <button class="tab__buttons" onclick="openTab(event,'container-3')">
+                        <div class="container__blocks__secondChild__nav">
+                            <div><img src="images/home.svg" alt="home" class="tab__img"></div>
+                            <div><p class="tab__links">Главная</p></div>
+                        </div>
+                    </button>
+                    
+                    <button class="tab__buttons" onclick="openTab(event,'container-2')">
+                        <div class="container__blocks__secondChild__nav">
+                            <div><img src="images/user.svg" alt="user" class="tab__img"></div>
+                            <div><p class="tab__links">Профиль</p></div>
+                        </div>
+                    </button>
+                    
+                    <button class="tab__buttons" onclick="openTab(event,'container-4')">
+                        <div class="container__blocks__secondChild__nav">
+                            <div><img src="images/works.svg" alt="works" class="tab__img"></div>
+                            <div><p class="tab__links">Мои работы</p></div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="container__blocks__lastChild" id="container__blocks__lastChild">
+                    <button class="tab__buttons" onclick="openTab(event,'container-5')">
+                        <div class="container__blocks__lastChild__nav">
+                            <div><img src="images/blog.svg" alt="blog" class="tab__img"></div>
+                            <div><p class="tab__links">Блог</p></div>
+                        </div>
+                    </button>
+
+
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <main>
+        <div class="container-2 tabs__containers" id="container-2">
+            <div class="container-2__blocks" id="container-2__blocks">
+                <div class="container-2__blocks__headline">
+                    <div><p class="tab__headline">Профиль</p></div>
+                </div>
+
+                <div class="container-2__blocks__content" id="container-2__blocks__content">
+                    <div><img src="images/faq.jpg" alt="avatar" class="author__avatar__nav"></div>
+
+                    <div class="container-2__blocks__content__lastChild" id="container-2__blocks__content__lastChild">
+                        <div class="container-2__blocks__content__name">
+                            <div><p class="author__name__nav" id="author__name__nav">Шамиль Мелисов</p></div>
+                            <div><p class="author__nickname__nav" id="author__nickname__nav">shm_HTML</p></div>
+                        </div>
+                        <div><p class="author__position__nav">🚀 Front End Developer 🚀</p></div>
+                        <div class="container-2__blocks__content__bio">
+                            <div><p class="author__age__nav" id="author__age__nav">Возраст:</p></div>
+                            <div><p class="author__age__value" id="author__age__value">16 лет</p></div>
+                        </div>
+                        <div class="container-2__blocks__content__bio">
+                            <div><p class="author__country__nav" id="author__country__nav">Страна:</p></div>
+                            <div><p class="author__country__value" id="author__country__value">Кыргызстан</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-2__blocks__second__content" id="container-2__blocks__second__content">
+                    <div class="container-2__blocks__second__content__techno" id="container-2__blocks__second__content__techno">
+                        <div><p class="author__technology__nav" id="author__technology__nav">Технологии:</p></div>
+                        <div><p class="author__technologyList__nav">HTML5</p></div>
+                        <div><p class="author__technologyList__nav">CSS3</p></div>
+                        <div><p class="author__technologyList__nav">Js</p></div>
+                        <div><p class="author__technologyList__nav">Scss/Sass препроцессоры</p></div>
+                        <div><p class="author__technologyList__nav">Bootstrap</p></div>
+                        <div><p class="author__technologyList__nav">React</p></div>
+                    </div>
+                    
+                    <div class="container-2__blocks__second__content__instrum">
+                        <div><p class="author__instrum__nav" id="author__instrum__nav">Инструменты:</p></div>
+                        <div><p class="author__instrumList__nav">Visual Studio Code</p></div>
+                        <div><p class="author__instrumList__nav">Sublime Text</p></div>
+                    </div>
+
+                    <div class="container-2__blocks__second__content__skills">
+                        <div><p class="author__skills__nav" id="author__skills__nav"><i class="fi fi-ss-rocket-lunch"></i>Hard Skills:</p></div>
+                        <div>
+                            <ul class="author__skillsList__nav" id="author__skillsList__nav">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>SCSS(SASS)</li>
+                                <li>Bootstrap 5</li>
+                                <li>React</li>
+                                <li>Адаптивная/Резиновая верстка</li>
+                                <li>Кроссбраузерность</li>
+                                <li>Семантическая верстка</li>
+                                <li>Аккуратный и Чистый код</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container-2__blocks__second__content__contacts" id="container-2__blocks__second__content__contacts">
+                        <div><p class="author__contacts__nav" id="author__contacts__nav"><i class="fi fi-rr-comment-info"></i>Контакты:</p></div>
+                        <div class="container__socialmedia__links" id="container__socialmedia__links">
+                            <div><a href="https://t.me/shampano333" class="author__telegram" id="author__telegram"><i class="fa-brands fa-telegram"></i></a></div>
+                            <div><p class="author__mail" id="author__mail">akastramormoley1st@mail.ru</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-3 tabs__containers" id="container-3">
+            <div class="container-3__blocks" id="container-3__blocks">
+                <div class="container-3__blocks__header" id="container-3__blocks__header">
+                    <div><p class="tab__headline">Главная</p></div>
+                </div>
+
+                <div><p>Тут пока ничего нет</p></div>
+            </div>
+        </div>
+
+        <div class="container-4 tabs__containers" id="container-4">
+            <div class="container-4__blocks" id="container-4__blocks">
+                <div class="container-4__blocks__header" id="container-4__blocks__header">
+                    <div><p class="tab__headline">Мои работы</p></div>
+                </div>
+
+                <div><p>Тут пока ничего нет</p></div>
+            </div>
+        </div>
+
+        <div class="container-5 tabs__containers" id="container-5">
+            <div class="container-5__blocks" id="container-5__blocks">
+                <div class="container-5__blocks__header" id="container-5__blocks__header">
+                    <div><p class="tab__headline">Блог</p></div>
+                </div>
+
+                <div class="container-5__blocks__tags" id="container-5__blocks__tags">
+                    <div class="container-5__blocks__tags__select" id="container-5__blocks__tags__select">
+                        <div><button class="all_post__button" id="all_post__button">#Теги <i class="fa-solid fa-caret-up app_post__icon"></i></button></div>
+                        <div class="container-5__blocks__tags__option" id="container-5__blocks__tags__option">
+                            <div><button class="select_post__button" onclick="openTag('content_withLifeStyle')">lifestyle</button></div>
+                            <div><button class="select_post__button" onclick="openTag('content_withIt')">it</button></div>
+                            <div><button class="select_post__button" onclick="openTag('content_without')">без тега</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-5__blocks__content content_tag" id="content_without">
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://react.dev/images/home/conf2021/cover.svg" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                    </div>
+
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://react.dev/images/home/conf2021/cover.svg" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                    </div>
+
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://react.dev/images/home/conf2021/cover.svg" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                    </div>
+
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://react.dev/images/home/conf2021/cover.svg" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                    </div>
+                </div>
+
+
+                <div class="container-5__blocks__content content_tag" id="content_withLifeStyle">
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://www.nationsonline.org/gallery/USA/Times-Square-New-York.jpg" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                        <div><span class="tag__lifestyle">#lifestyle</span></div>
+                    </div>
+
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://www.nationsonline.org/gallery/USA/Times-Square-New-York.jpg" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                        <div><span class="tag__lifestyle">#lifestyle</span></div>
+                    </div>
+
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://www.nationsonline.org/gallery/USA/Times-Square-New-York.jpg" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                        <div><span class="tag__lifestyle">#lifestyle</span></div>
+                    </div>
+
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://www.nationsonline.org/gallery/USA/Times-Square-New-York.jpg" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                        <div><span class="tag__lifestyle">#lifestyle</span></div>
+                    </div>
+                </div>
+
+                <div class="container-5__blocks__content content_tag" id="content_withIt">
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://blog.dankicode.com/wp-content/uploads/2020/05/o-que-da-para-fazer-com-javascript.png" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                        <div><span class="tag__it">#it</span></div>
+                    </div>
+
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://blog.dankicode.com/wp-content/uploads/2020/05/o-que-da-para-fazer-com-javascript.png" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                        <div><span class="tag__it">#it</span></div>
+                    </div>
+
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://blog.dankicode.com/wp-content/uploads/2020/05/o-que-da-para-fazer-com-javascript.png" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                        <div><span class="tag__it">#it</span></div>
+                    </div>
+
+                    <div class="container-5__blocks__content__info">
+                        <div><img src="https://blog.dankicode.com/wp-content/uploads/2020/05/o-que-da-para-fazer-com-javascript.png" alt="post__img" class="post__img"></div>
+                        <div class="container__post__date">
+                            <div><p class="post__author">Шамиль Мелисов</p></div>
+                            <div><p class="post__dot">•</p></div>
+                            <div><p class="post__time"></p></div>
+                            <div><p class="post__date">13 июня 2023</p></div>
+                        </div>
+                        <div><p class="post__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nihil.</p></div>
+                        <div><p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium dolorem recusandae maxime deserunt numquam nam assumenda asperiores minus quia in deleniti facilis, ab laboriosam voluptates fugit architecto itaque non.</p></div>
+                        <div><span class="tag__it">#it</span></div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
